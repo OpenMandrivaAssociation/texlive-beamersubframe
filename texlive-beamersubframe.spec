@@ -1,3 +1,9 @@
+# revision 23510
+# category Package
+# catalog-ctan /macros/latex/contrib/beamer-contrib/beamersubframe
+# catalog-date 2011-08-11 10:23:40 +0200
+# catalog-license lppl
+# catalog-version 0.2
 Name:		texlive-beamersubframe
 Version:	0.2
 Release:	1
@@ -50,6 +56,7 @@ describes the package as "experimental".
 #- source
 %doc %{_texmfdistdir}/source/latex/beamersubframe/beamersubframe.dtx
 %doc %{_texmfdistdir}/source/latex/beamersubframe/beamersubframe.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,3 +67,5 @@ describes the package as "experimental".
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
