@@ -1,6 +1,6 @@
 Name:		texlive-beamersubframe
 Version:	23510
-Release:	1
+Release:	2
 Summary:	Reorder frames in the PDF file
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/beamersubframe
